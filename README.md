@@ -5,7 +5,7 @@
 
 ### Overview
 The **WebApi** is a backend system, I developed using **ASP.Net Core**  in order to handles different requests such as get,post,put and delete methods.  
-The **clientApp** is an **Angular** project that consumes the requests from our web api project.  
+The **clientApp** is an **Angular** project that consumes the requests from my web api project.  
 _____
 ### Requirements
 - .Net Core 5  
@@ -15,48 +15,58 @@ _____
 
 ---
 ### Setup
-- clone this project  
-- Navigate to the webapi folder path :
+#### clone this project.  
+##### navigate to the webapi folder path:
 ````
 cd .\WebApi\
 ````
 
 
-#### do the following:   
-
+##### restore the project dependencies:
 ````
 dotnet restore 
-````
+````  
+##### build the project:
 ````
 dotnet build
-````
+````  
+##### create your database: 
 ````
 dotnet ef database update
 ````
+##### run the application:
 ````
 dotnet run 
 ````
 
-- Navigate to the clientApp folder path :  
+##### navigate to the clientApp folder path:  
 ````
   cd .\clientApp\ 
 ````
   
-#### do the following:  
+#### install the dependencies: 
 ````
 npm install 
-````
+````  
+#### run the application:
 ````
 npm start 
-````
-open your browser to 
+```` 
+#### open your browser to:
 ````
 http://localhost:4200/
 ````
   
-#### admin credentials :
-> username : admin  
-> password : admin
+#### admin credentials:
+
+##### username:  
+````
+admin  
+````
+##### password:
+````
+admin 
+````
 
 --- 
 
