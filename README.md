@@ -58,6 +58,8 @@ http://localhost:4200/
 > username : admin  
 > password : admin
 
+--- 
 
 ### Demo Video 
-[link](https://www.loom.com/share/014b730c53ab43f7b1d1468dbf349ab6)
+
+https://user-images.githubusercontent.com/82724393/144414489-6078dee2-bc0c-4c8b-9051-19045fea1fdc.mp4
