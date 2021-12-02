@@ -6,10 +6,10 @@ such as get,post,put and delete methods. It uses **Entity Framework Core** to co
 [The clientApp](https://github.com/ahmed-git-tn/BugTracker/tree/main/clientApp) is an **Angular** project that consumes the requests from my web api project.  
 #
 ### Requirements
-- .Net Core 5  
-- SQL Server  
-- Node.js  v14.18.1  
-- Angular CLI: 12.2.9
+- [.Net Core 5](https://dotnet.microsoft.com/download/dotnet/5.0)
+- [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads?rtc=1)  
+- [Node.js  v14.18.1](https://nodejs.org/en/download/)
+- [Angular CLI: 12.2.9](https://angular.io/guide/setup-local#install-the-angular-cli)
 
 #
 ### Setup
