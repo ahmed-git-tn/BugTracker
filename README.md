@@ -1,8 +1,9 @@
 ## Bug Tracker  
 
 ### Overview
-The **WebApi** is a backend system, I developed using **ASP.Net Core**  in order to handles different requests such as get,post,put and delete methods.  
-The **clientApp** is an **Angular** project that consumes the requests from my web api project.  
+[The WebApi](https://github.com/ahmed-git-tn/BugTracker/tree/main/WebApi)  is a backend system, I developed using **ASP.Net Core**  in order to handles different requests   
+such as get,post,put and delete methods. It uses **Entity Framework Core** to communicate with the database.  
+[The clientApp](https://github.com/ahmed-git-tn/BugTracker/tree/main/clientApp) is an **Angular** project that consumes the requests from my web api project.  
 #
 ### Requirements
 - .Net Core 5  
@@ -12,7 +13,10 @@ The **clientApp** is an **Angular** project that consumes the requests from my w
 
 #
 ### Setup
-#### clone this project.  
+##### clone this project.  
+````
+git clone https://github.com/ahmed-git-tn/BugTracker.git
+````
 ##### navigate to the webapi folder path:
 ````
 cd .\WebApi\
