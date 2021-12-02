@@ -1,19 +1,16 @@
-# BugTracker  
-
-
-
+## Bug Tracker  
 
 ### Overview
 The **WebApi** is a backend system, I developed using **ASP.Net Core**  in order to handles different requests such as get,post,put and delete methods.  
 The **clientApp** is an **Angular** project that consumes the requests from my web api project.  
-_____
+#
 ### Requirements
 - .Net Core 5  
 - SQL Server  
 - Node.js  v14.18.1  
 - Angular CLI: 12.2.9
 
----
+#
 ### Setup
 #### clone this project.  
 ##### navigate to the webapi folder path:
@@ -68,7 +65,7 @@ admin
 admin 
 ````
 
---- 
+#
 
 ### Demo Video 
 
