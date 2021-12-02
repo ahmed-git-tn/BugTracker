@@ -1,0 +1,44 @@
+<div *ngIf="isLoggedIn" class="container">
+  <div class="row mb-3 ">
+    <a class="btn btn-info shadow" routerLink="/new-bug">
+      <span class="mr-1"> new bug</span>
+      <i class="fa fa-bug" aria-hidden="true"></i> 
+    </a>
+  </div>
+  <div class="row">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr class="table-success">
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">State</th>
+            <th scope="col">Priority</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let bug of bugs | paginate: { itemsPerPage: 10, currentPage: p  } ; let i = index">
+            <td>{{ bug.title }}</td>
+            <td>{{bug.description}}</td>
+            <td>{{bug.state}}</td>
+            <td>{{bug.priority}}</td>
+            <td>
+              <a class="btn btn-btn btn-info mr-2" [routerLink]="['/backlog/details', bug.id]">
+                details
+              </a>
+              <a class="btn btn-success mr-2" [routerLink]="['/backlog/edit', bug.id]">
+                edit
+              </a>
+              <button class="btn btn-danger mr-2" (click)="onDeleteBug(bug.id,bug.title)">
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <pagination-controls (pageChange)="p = $event" class=" mt-2 mx-auto"></pagination-controls>
+
+  </div>
+</div>

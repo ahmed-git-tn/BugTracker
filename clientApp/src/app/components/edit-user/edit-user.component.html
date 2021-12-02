@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 mx-auto">
+      <form [formGroup]="userForm" (ngSubmit)="onEdit()">
+        <div class="form-group">
+          <label for="user-permission">permission</label>
+          <select id="user-permission" class="form-control" formControlName="permission">
+            <option [value]="currentPermission" selected>{{currentPermission | role:currentPermission}}</option>
+            <option [hidden]="currentPermission" value="true">admin</option>
+            <option [hidden]="!currentPermission" value="false">user</option>
+          </select>
+        </div>
+        <button class="btn btn-success" type="submit">confirm</button>
+      </form>
+      <div class="row ml-2">
+        <a routerLink="/users">cancel</a>
+      </div>
+    </div>
+  </div>
+</div>

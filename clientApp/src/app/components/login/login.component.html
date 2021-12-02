@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div *ngIf="isLoading" class="col-6 mx-auto">
+      <div  style="text-align: center;">
+        <app-loading-spinner></app-loading-spinner>
+      </div>
+    </div>
+   
+  </div>
+  <div class="row">
+    <div *ngIf="!isLoading" class="col-6 mx-auto">
+    
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="username">username</label>
+          <input type="text" class="form-control" id="username" formControlName="userName">
+        </div>
+        <div class="form-group">
+          <label for="password">password</label>
+          <input type="password" class="form-control" id="password" formControlName="password">
+        </div>
+        <div *ngIf="alert && errorMessage.length>0" class="alert alert-danger"><span class="font-italic">{{errorMessage}}</span></div>
+        <button type="submit" class="btn btn-primary shadow">login</button>
+      </form>
+      <a routerLink="">cancel</a>
+    </div>
+  </div>
+</div>

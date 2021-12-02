@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8 mx-auto">  
+            <label for="title">title</label>
+            <p id="title" class="form-control"> {{bug.title}}</p>
+            <label for="description">description</label>
+            <p for="description" class="form-control">{{bug.description}} </p>
+            <label for="priority">priority</label>
+            <p id="priority" class="form-control">{{bug.priority}} </p>
+            <label for="state">state</label>
+            <p id="state" class="form-control">{{bug.state}} </p>
+            <a class="btn btn-success" [routerLink]="['/backlog/edit',bug.id]">edit</a>
+            <div>
+                <a routerLink="/backlog">cancel</a>
+            </div>
+        </div>
+    </div>
+</div>

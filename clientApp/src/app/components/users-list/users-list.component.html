@@ -1,0 +1,30 @@
+<div *ngIf="isAdmin" class="container">
+    <div class="row">
+      <div class="table-responsive">
+        <table class="table">
+          <tr class="table-success">
+            <th>username</th>
+            <th>email</th>
+            <th>permission</th>
+            <th>Action</th>
+          </tr>
+          <tr *ngFor="let user of users | paginate: { itemsPerPage: 8, currentPage: p  } ; let i = index">
+            <td>{{user.userName}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.isAdmin | role:user.isAdmin}}</td>
+            <td>
+              <button class="btn btn-danger mr-2" (click)="onDelete(user.id,user.userName)">
+                delete
+              </button>
+              <a class="btn btn-success mr-2" [routerLink]="['/users/edit-user', user.id]">
+                edit
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <pagination-controls (pageChange)="p = $event" class=" mt-2 mx-auto"></pagination-controls>
+    </div>
+  </div>
+  
+  
